@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,4 +12,116 @@
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/ivProfilePhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/maria"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ivProfilePhoto"
+        android:text="Cute Maria"/>
+    <LinearLayout
+        android:id="@+id/profileBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvProfileName"
+        android:layout_margin="20dp"
+        >
+        <ImageButton
+            android:id="@+id/ibProfileCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_call" />
+        <ImageButton
+            android:id="@+id/ibProfileChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/sym_action_chat" />
+
+        <ImageButton
+            android:id="@+id/ibProfileMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_dialog_email" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/callBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profileBar"
+        android:layout_margin="20dp"
+        >
+        <ImageButton
+            android:id="@+id/ibCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_call" />
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+56 9 8524 7412"
+            android:gravity="fill_vertical"
+            android:textSize="20dp"
+            />
+
+        <ImageButton
+            android:id="@+id/ibVideoCall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@android:drawable/presence_video_online" />
+        <ImageButton
+            android:id="@+id/ibChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/sym_action_chat" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mailBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/callBar"
+        android:layout_margin="20dp"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_dialog_email" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="sofia.varas@mail.com"
+            android:gravity="fill_vertical"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
