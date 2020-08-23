@@ -16,7 +16,9 @@
         android:elevation="4dp"
         android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
+    />
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"

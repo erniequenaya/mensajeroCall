@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivCallPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/maria"
+            />
+        <TextView
+            android:id="@+id/tvCallName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="testText"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/ivCallPhoto"
+            android:layout_marginTop="10dp"
+            />
+
+    <ImageView
+        android:id="@+id/ivCallType"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/ivCallPhoto"
+        app:srcCompat="@android:drawable/sym_call_outgoing"
+        android:layout_below="@id/tvCallName"
+        android:layout_margin="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tvCallCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCallName"
+            android:text="Chile"
+            android:layout_toRightOf="@id/ivCallType"
+            android:layout_margin="5dp"
+            />
+
+    <ImageButton
+        android:id="@+id/ibCallCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@android:drawable/stat_sys_phone_call" />
+</RelativeLayout>
