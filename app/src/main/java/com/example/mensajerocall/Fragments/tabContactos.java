@@ -1,20 +1,21 @@
 package com.example.mensajerocall.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.mensajerocall.Adapters.contactsAdapter;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.example.mensajerocall.Adapters.PagerAdapter;
 import com.example.mensajerocall.R;
 
 import java.util.ArrayList;
@@ -74,6 +75,20 @@ public class tabContactos extends Fragment {
             String itemContact = contacts.get(position);
             TextView conName = (TextView) convertView.findViewById(R.id.tvContactName);
             conName.setText(itemContact);
+
+            ImageView ivPhoto = (ImageView) convertView.findViewById(R.id.ivContactPhoto);
+            ivPhoto.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //Fragment fCall = getFragmentManager().findFragmentById("android:switcher:" + R.id.mainPager + ":" + PagerAdapter.);
+                    //Fragment fCall = getFragmentManager().findFragmentByTag("tabLla");
+                    //FragmentTransaction ts = getFragmentManager().beginTransaction();
+                    //ts.replace(R.id.mainPager,fCall);
+                    //ts.addToBackStack(null);
+                    //ts.commit();
+                }
+            });
+
             return  convertView;
         }
     }
