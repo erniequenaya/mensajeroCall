@@ -19,7 +19,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        getSupportActionBar().setIcon(R.mipmap.logocall_round);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // intent register -> login

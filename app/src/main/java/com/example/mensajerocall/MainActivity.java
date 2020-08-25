@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Toolbar toolbar2 = (Toolbar) findViewById(R.id.toolbar2);
         //setSupportActionBar(toolbar2);
+        getSupportActionBar().setLogo(R.drawable.logocall);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabsLayout);
         tabLayout.addTab(tabLayout.newTab().setText("Contactos"));

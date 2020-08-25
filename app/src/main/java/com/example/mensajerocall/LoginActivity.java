@@ -18,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        getSupportActionBar().setIcon(R.mipmap.logocall_round);
 
         // intent login -> register
         login = (TextView) findViewById(R.id.tvRegister);

@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/ivProfilePhoto"
-        android:text="Cute Maria"/>
+        android:text="Sofía Varas"/>
     <LinearLayout
         android:id="@+id/profileBar"
         android:layout_width="wrap_content"
